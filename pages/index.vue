@@ -1,9 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <h1>
-        Qiita
-      </h1>
+      <h1>Rakuten</h1>
       <p>
         Qiita is a technical knowledge sharing and collaboration platform for programmers.
       </p>

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://qiita.com/api/v2/";
+const BASE_URL = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706?applicationId=1032774112986862191&keyword=";
 
 export default {
   async getItems({ commit }, payload) {
@@ -8,13 +8,7 @@ export default {
     commit("showLoading");
     // リクエスト送信
     const response = await axios
-      .get(`${BASE_URL}items`, {
-        headers: { "Content-Type": "application/json" },
-        params: {
-          page: 1,
-          per_page: 20,
-          query: payload.keyword
-        },
+      .get(BASE_URL + payload.keyword , {
         timeout: 15000
       })
       .catch(error => {

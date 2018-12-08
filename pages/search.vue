@@ -29,7 +29,7 @@ export default {
   // store の action に用意した 'getItems' を呼ぶ
   fetch ({ store }) {
     store.dispatch('getItems', {
-      keyword: 'nuxt.js'
+      keyword: 'iphone'
     })
   }
 }
