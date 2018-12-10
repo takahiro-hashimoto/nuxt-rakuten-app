@@ -18,7 +18,7 @@
   </div>
 </template>
 
-<script lang="babel">
+<script>
 import {mapState} from 'vuex'
 
 export default {
