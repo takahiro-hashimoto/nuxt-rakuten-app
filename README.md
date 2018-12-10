@@ -1,22 +1,13 @@
-# nuxt-rakuten-app
+# Nuxt.jsで楽天商品検索アプリを作ってみた
 
-> My groundbreaking Nuxt.js project
+## 目的
+* Nuxt.jsを触ってみる
+* Vuexの理解を深める
 
-## Build Setup
+## 使用技術
+* Nuxt.js（Vue.js）
+* ElementUI
 
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Nuxt.jsを使ってみた感想
+* cssはどこまでを共通のcssに持たせるといいのか、どこまでをscopedで区切るといいかの線引きがわからない
+* 開発環境をすぐに用意してくれるのは便利だけど、Vue.jsの理解が浅いと辛い

@@ -21,9 +21,9 @@ export default {
       rules: {
         keyword: [
           // 未入力はエラー
-          { required: true, message: 'Please input the keyword', trigger: 'blur' },
+          { required: true, message: 'キーワードを入力してください', trigger: 'blur' },
           // 空白のみの入力はエラー
-          { whitespace: true, message: 'Please input the keyword', trigger: 'blur' }
+          { whitespace: true, message: 'キーワードを入力してください', trigger: 'blur' }
         ]
       }
     }
