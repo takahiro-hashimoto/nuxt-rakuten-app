@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
   .header {
     font-size: 20px;
     left: 0;

@@ -19,9 +19,7 @@ import SearchForm from '~/components/SearchForm.vue'
 export default {
   layout: 'search',
   components: {
-    // 検索フォームを表示するコンポーネント
     SearchForm,
-    // 検索結果一覧を表示するコンポーネント
     SearchResult
   },
   // store の state からデータを取得

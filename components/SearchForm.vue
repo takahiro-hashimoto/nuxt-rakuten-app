@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .el-form {
   margin-top: 1em;
   margin-left: 1em;
