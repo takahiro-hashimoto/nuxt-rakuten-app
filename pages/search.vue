@@ -17,7 +17,7 @@ import SearchResult from '~/components/SearchResult.vue'
 import SearchForm from '~/components/SearchForm.vue'
 
 export default {
-
+  layout: 'search',
   components: {
     // 検索フォームを表示するコンポーネント
     SearchForm,
@@ -34,9 +34,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.el-main {
-  background-color: #fff;
-}
-</style>

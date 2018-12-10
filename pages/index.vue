@@ -1,12 +1,9 @@
 <template>
   <section class="container">
     <div>
-      <h1>Rakuten</h1>
-      <p>
-        Qiita is a technical knowledge sharing and collaboration platform for programmers.
-      </p>
-      <div class="links">
-        <nuxt-link to="/search" class="button--white"><i class="el-icon-search"></i> Search</nuxt-link>
+      <h1 class="heading-title l-bottom-large">Rakuten App</h1>
+      <div class="button-link">
+        <nuxt-link to="/search"><i class="el-icon-search"></i> Search</nuxt-link>
       </div>
     </div>
   </section>
@@ -22,21 +19,25 @@
   color: #fff;
   background-color: #bf0000;
 }
-h1 {
-  display: block;
-  font-weight: 400;
+
+.heading-title {
+  font-weight: bold;
   font-size: 100px;
   color: #fff;
   letter-spacing: 5px;
 }
-h4 {
-  font-weight: 300;
-  font-size: 18px;
-  word-spacing: 2px;
-  padding-top: 24px;
-  padding-bottom: 30px;
+
+.button-link a {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: #fff;
 }
-.container .links {
-  padding-top: 15px;
+
+.button-link a:link,
+.button-link a:visited {
+  color: #fff;
 }
 </style>

@@ -29,7 +29,7 @@ export default {
     }
   },
   methods: {
-    // search ボタン押下で呼ばれるメソッド。バリデーション含む
+    // search ボタン押下で呼ばれるメソッド
     search (form) {
       this.$refs[form].validate((valid) => {
         if (!valid) {
@@ -38,7 +38,7 @@ export default {
         this.sendRequest()
       })
     },
-    // store の action に用意した 'getItems' を呼ぶ
+    // store の action から getItems を呼ぶ
     sendRequest () {
       this.$store.dispatch('getItems', {
         keyword: this.searchForm.keyword

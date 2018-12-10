@@ -8,10 +8,10 @@
   <template v-else>
     <el-col :span="6" v-for="item in lists" :key="item.id" class="col-style">
       <el-card :body-style="{ padding: '15px' }" class="box-card">
-        <p><img :src="item.Item.smallImageUrls[0]" width="64" height="64"></p>
-        <p><a :href="item.Item.itemUrl" target="_blank">{{ item.Item.itemName | description }}</a></p>
-        <p>Price：{{item.Item.itemPrice}}</p>
-        <p>商品説明：{{item.Item.itemCaption}}</p>
+        <p class="l-bottom-small"><img :src="item.Item.smallImageUrls[0]" width="64" height="64"></p>
+        <p class="card-title l-bottom-small"><a :href="item.Item.itemUrl" target="_blank">{{ item.Item.itemName }}</a></p>
+        <p class="l-bottom-small">価格：￥{{item.Item.itemPrice}}</p>
+        <p class="card-description">商品説明：{{item.Item.itemCaption}}</p>
       </el-card>
     </el-col>
   </template>
@@ -54,6 +54,18 @@ export default {
 
 .tab-style {
   margin-right: 5px;
+}
+
+.card-title {
+  overflow: hidden;
+	height: 4.5em;
+	line-height: 1.5;
+}
+
+.card-description {
+  overflow: hidden;
+	height: 9em;
+	line-height: 1.5;
 }
 
 .box-card {

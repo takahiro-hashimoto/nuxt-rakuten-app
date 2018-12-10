@@ -1,19 +1,5 @@
 <template>
   <div>
-    <my-header />
-    <nuxt />
-    <my-footer />
+    <nuxt/>
   </div>
 </template>
-
-<script>
-import MyHeader from '~/components/Header.vue'
-import MyFooter from '~/components/Footer.vue'
-export default {
-  name: 'default',
-  components: {
-    MyHeader,
-    MyFooter
-  }
-}
-</script>
