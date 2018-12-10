@@ -17,7 +17,7 @@ import SearchResult from '~/components/SearchResult.vue'
 import SearchForm from '~/components/SearchForm.vue'
 
 export default {
-  layout: 'default',
+
   components: {
     // 検索フォームを表示するコンポーネント
     SearchForm,
@@ -29,7 +29,7 @@ export default {
   // store の action に用意した 'getItems' を呼ぶ
   fetch ({ store }) {
     store.dispatch('getItems', {
-      keyword: 'iphone'
+      keyword: 'カメラ'
     })
   }
 }

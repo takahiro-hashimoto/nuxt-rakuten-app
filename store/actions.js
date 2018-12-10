@@ -9,6 +9,7 @@ export default {
     // リクエスト送信
     const response = await axios
       .get(BASE_URL + payload.keyword , {
+        headers: { "Content-Type": "application/json" },
         timeout: 15000
       })
       .catch(error => {

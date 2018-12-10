@@ -6,12 +6,12 @@
   </template>
   <!-- 検索結果一覧 -->
   <template v-else>
-    <el-col :span="6" v-for="item in lists.Items" :key="item.id" class="col-style">
+    <el-col :span="6" v-for="item in lists" :key="item.id" class="col-style">
       <el-card :body-style="{ padding: '15px' }" class="box-card">
-        <p><img :src="item.Item.smallImageUrls[0]" :alt="item.Item.itemName"></p>
-        <p><a :href="item.Item.itemUrl" target="_blank">{{item.Item.itemName}}</a></p>
-        <p>{{item.Item.itemPrice}}</p>
-        <p>{{item.Item.itemCaption}}</p>
+        <p><img :src="item.Item.smallImageUrls[0]" width="64" height="64"></p>
+        <p><a :href="item.Item.itemUrl" target="_blank">{{ item.Item.itemName | description }}</a></p>
+        <p>Price：{{item.Item.itemPrice}}</p>
+        <p>商品説明：{{item.Item.itemCaption}}</p>
       </el-card>
     </el-col>
   </template>
@@ -66,7 +66,7 @@ export default {
 }
 
 .page-component-up {
-  background-color: #59bb0c;
+  background-color: #3a8ee6;
   position: fixed;
   right: 80px;
   bottom: 80px;
@@ -88,10 +88,10 @@ export default {
 
 a:link,
 a:visited {
-  color: #59bb0c;
+  color: #3a8ee6;
 }
 
 a:hover {
-  color: #3b8070;
+  color: #2571bf;
 }
 </style>
