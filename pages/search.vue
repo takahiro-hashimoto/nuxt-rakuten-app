@@ -26,10 +26,11 @@ export default {
   },
   // store の state からデータを取得
   computed: mapState(['isLoading']),
-  // store の action に用意した 'getItems' を呼ぶ
+
+  // ページがレンダリングされる前に、getItemsを呼び、データをストアに入れる
   fetch ({ store }) {
     store.dispatch('getItems', {
-      keyword: 'カメラ'
+      keyword: '一眼レフカメラ'
     })
   }
 }
